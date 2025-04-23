@@ -1,14 +1,15 @@
 import React from 'react';
 import {
-  BsCart3,
-  BsGrid1X2Fill,
-  BsFillArchiveFill,
-  BsFillGrid3X3GapFill,
-  BsPeopleFill,
-  BsListCheck,
-  BsMenuButtonWideFill,
-  BsFillGearFill,
+    BsCart3,
+    BsFillArchiveFill,
+    BsFillGearFill,
+    BsFillGrid3X3GapFill,
+    BsGrid1X2Fill,
+    BsListCheck,
+    BsMenuButtonWideFill,
+    BsPeopleFill,
 } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
   return (
@@ -27,39 +28,39 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
 
       <ul className='sidebar-list'>
         <li className='sidebar-list-item'>
-          <a href=''>
+          <Link to='/'>
             <BsGrid1X2Fill className='icon' /> Dashboard
-          </a>
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href=''>
+          <Link to='/products'>
             <BsFillArchiveFill className='icon' /> Products
-          </a>
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href=''>
+          <Link to='/categories'>
             <BsFillGrid3X3GapFill className='icon' /> Categories
-          </a>
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href=''>
+          <Link to='/customers'>
             <BsPeopleFill className='icon' /> Customers
-          </a>
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href=''>
+          <Link to='/inventory'>
             <BsListCheck className='icon' /> Inventory
-          </a>
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href=''>
+          <Link to='/reports'>
             <BsMenuButtonWideFill className='icon' /> Reports
-          </a>
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href=''>
+          <Link to='/settings'>
             <BsFillGearFill className='icon' /> Setting
-          </a>
+          </Link>
         </li>
       </ul>
     </aside>
