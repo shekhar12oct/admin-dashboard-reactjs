@@ -10,15 +10,20 @@ import Products from './components/Products';
 import Reports from './components/Reports';
 import Settings from './components/Settings';
 import Sidebar from './components/Sidebar';
+import { useSelector } from 'react-redux';
 
 const App = () => {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
   const OpenSidebar = () => {
     setOpenSidebarToggle(!openSidebarToggle);
   };
+  const theme = useSelector((state) => state.theme.mode);
   return (
     <Router>
-      <div className='grid-container'>
+      <div
+        style={{ backgroundColor: `${theme === 'dark' ? 'black' : 'white'}` }}
+        className='grid-container'
+      >
         {/* Always visible */}
         <Header OpenSidebar={OpenSidebar} />
         <Sidebar
