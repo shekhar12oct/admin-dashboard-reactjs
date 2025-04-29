@@ -6,7 +6,14 @@ const DynamicTable = ({ data, headers }) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
   return (
-    <div style={{ overflow: 'auto', height:'80vh' }}>
+    <div
+      style={{
+        overflow: 'auto',
+        height: '80vh',
+        border: '1px solid white',
+        borderRadius: '10px',
+      }}
+    >
       <table style={{ borderCollapse: 'collapse', width: '100%' }}>
         <thead>
           <tr>
