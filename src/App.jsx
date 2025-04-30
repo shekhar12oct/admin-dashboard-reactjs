@@ -11,6 +11,7 @@ import Reports from './components/Reports';
 import Settings from './components/Settings';
 import Sidebar from './components/Sidebar';
 import { useSelector } from 'react-redux';
+import { CATEGORIES_LIST } from '../src/constant/categoryList';
 
 const App = () => {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -35,7 +36,10 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/products' element={<Products />} />
-            <Route path='/categories' element={<Categories />} />
+            <Route
+              path='/categories'
+              element={<Categories categoriesData={CATEGORIES_LIST} />}
+            />
             <Route path='/customers' element={<Customers />} />
             <Route path='/inventory' element={<Inventory />} />
             <Route path='/reports' element={<Reports />} />
