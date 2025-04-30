@@ -1,13 +1,12 @@
 import React from 'react';
 import {
-    BsCart3,
-    BsFillArchiveFill,
-    BsFillGearFill,
-    BsFillGrid3X3GapFill,
-    BsGrid1X2Fill,
-    BsListCheck,
-    BsMenuButtonWideFill,
-    BsPeopleFill,
+  BsCart3,
+  BsFillArchiveFill,
+  BsFillGearFill,
+  BsFillGrid3X3GapFill,
+  BsGrid1X2Fill,
+  BsMenuButtonWideFill,
+  BsPeopleFill
 } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
@@ -45,11 +44,6 @@ const Sidebar = ({ openSidebarToggle, OpenSidebar }) => {
         <li className='sidebar-list-item'>
           <Link to='/customers'>
             <BsPeopleFill className='icon' /> Customers
-          </Link>
-        </li>
-        <li className='sidebar-list-item'>
-          <Link to='/inventory'>
-            <BsListCheck className='icon' /> Inventory
           </Link>
         </li>
         <li className='sidebar-list-item'>

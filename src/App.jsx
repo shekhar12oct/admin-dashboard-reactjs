@@ -1,17 +1,16 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { CATEGORIES_LIST } from '../src/constant/categoryList';
 import './App.css';
 import Categories from './components/Categories';
 import Customers from './components/Customers';
 import Header from './components/Header';
 import Home from './components/Home';
-import Inventory from './components/Inventory';
 import Products from './components/Products';
 import Reports from './components/Reports';
 import Settings from './components/Settings';
 import Sidebar from './components/Sidebar';
-import { useSelector } from 'react-redux';
-import { CATEGORIES_LIST } from '../src/constant/categoryList';
 
 const App = () => {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -41,7 +40,6 @@ const App = () => {
               element={<Categories categoriesData={CATEGORIES_LIST} />}
             />
             <Route path='/customers' element={<Customers />} />
-            <Route path='/inventory' element={<Inventory />} />
             <Route path='/reports' element={<Reports />} />
             <Route path='/settings' element={<Settings />} />
           </Routes>
