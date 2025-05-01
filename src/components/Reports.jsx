@@ -61,7 +61,7 @@ const styles = {
     fontFamily: 'Arial, sans-serif',
   },
   pageTitle: {
-    fontSize: '28px',
+    fontSize: '29px',
     marginBottom: '20px',
   },
   cardGrid: {
