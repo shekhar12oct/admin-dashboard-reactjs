@@ -35,11 +35,11 @@ A responsive and interactive Admin Dashboard built with **ReactJS**, styled usin
    git clone https://github.com/your-username/admin-dashboard.git
    cd admin-dashboard
 
-2. **Install dependencies
+2. Install dependencies
    npm install
-3. **Run the application
+3. Run the application
    npm run dev
-5. Build for production
+4. Build for production
    npm run build
    
    🧑‍💻 Author
