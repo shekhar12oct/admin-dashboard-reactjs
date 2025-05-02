@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { CATEGORIES_LIST } from '../src/constant/categoryList';
+import { PRODUCTS_LIST } from '../src/constant/productList';
 import './App.css';
 import Categories from './components/Categories';
 import Customers from './components/Customers';
@@ -34,7 +35,10 @@ const App = () => {
         <div className='main-content'>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/products' element={<Products />} />
+            <Route
+              path='/products'
+              element={<Products products={PRODUCTS_LIST} />}
+            />
             <Route
               path='/categories'
               element={<Categories categoriesData={CATEGORIES_LIST} />}
