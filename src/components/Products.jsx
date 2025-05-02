@@ -9,7 +9,7 @@ const Products = ({products}) => {
   <div style={styles.list}>
     {products.map((product) => (
       <div style={styles.card} key={product.id}>
-        <img src={product.image} alt={product.name} style={styles.image} />
+        <img src={product.image} alt={product.name} style={styles.image} loading='lazy' />
         <h3>{product.name}</h3>
         <p>${product.price.toFixed(2)}</p>
         <p>{product.description}</p>
