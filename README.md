@@ -36,11 +36,13 @@ A responsive and interactive Admin Dashboard built with **ReactJS**, styled usin
    cd admin-dashboard
 
 2. Install dependencies
-   bash
+   ```bash
    npm install
-4. Run the application
+3. Run the application
+   ```bash
    npm run dev
-5. Build for production
+4. Build for production
+   ```bash
    npm run build
    
    🧑‍💻 Author
