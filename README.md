@@ -1,4 +1,4 @@
-# Admin Dashboard (ReactJS)
+# Admin Dashboard (ReactJS + Redux-js toolkit)
 
 A responsive and interactive Admin Dashboard built with **ReactJS**, styled using **CSS**, state-managed via **Redux Toolkit**, and enriched with charts and graphs using **Recharts**. It also features client-side routing with **React Router DOM** and visually enhanced UI elements from **React Icons**.
 
